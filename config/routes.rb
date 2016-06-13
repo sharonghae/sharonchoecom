@@ -16,5 +16,8 @@ Rails.application.routes.draw do
 
     #route: to posts controller
     resources :posts
+
+    #route: admin/tags
+    resources :tags, except: [:index]
   end
 end
