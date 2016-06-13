@@ -1,0 +1,5 @@
+<h1>Admin::Posts#show</h1>
+<p><strong>title:</strong> <%= @post.title %></p>
+<p><strong>content:</strong> <%= @post.content %></p>
+<p><strong>publish:</strong> <%= convert_status(@post.publish) %></p>
+<p><strong>created:</strong> <%= time_ago(@post.created_at) %></p>

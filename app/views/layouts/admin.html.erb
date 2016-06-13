@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sharon Choe &mdash; developer/world traveler/lover</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if flash[:notice] %>
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<% if flash[:alert] %>
+    <div class="alert">
+      <%= flash[:alert] %>
+    </div>
+<% end %>
+
+<%= link_to "Log Out", logout_path %>
+
+<p><%= link_to "Posts", admin_posts_path %>
+  <%= link_to "Moderators", admin_moderators_path %>
+</p>
+
+<%= yield %>
+
+</body>
+</html>
