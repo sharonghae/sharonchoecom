@@ -17,4 +17,8 @@ class Admin::ApplicationController < ActionController::Base
       redirect_to "/login", alert: "Please login to view admin pages."
     end
   end
+
+  def to_bool str
+    ActiveRecord::Type::Boolean.new.type_cast_from_user(str)
+  end
 end

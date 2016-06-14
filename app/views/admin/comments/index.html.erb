@@ -1,0 +1,13 @@
+<h1>Comments</h1>
+
+<p>
+  <%= link_to "Approved", admin_comments_path(status: true) %>
+  <%= link_to "Unapproved", admin_comments_path(status: false) %>
+</p>
+
+<% @comments.each do |comment| %>
+    <p><strong>
+      <%= comment.visitor.fullname %></strong> posted message on <%= comment.post.title %>
+    </p>
+    <hr>
+<% end %>

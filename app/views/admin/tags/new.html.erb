@@ -24,6 +24,8 @@
         <%= link_to edit_admin_tag_path(tag) do %>
           <button type="button">Edit</button>
         <% end %>
+
+        <%= create_deletable_button tag %>
       </td>
     </tr>
   <% end %>

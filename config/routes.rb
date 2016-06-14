@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   #remap get requests to the controller
   get "/login" => "admin/sessions#new"
 
@@ -16,6 +15,9 @@ Rails.application.routes.draw do
 
     #route: to posts controller
     resources :posts
+
+    #route: comments controller
+    resources :comments, only: [:index, :update, :destroy]
 
     #route: admin/tags
     resources :tags, except: [:index]
