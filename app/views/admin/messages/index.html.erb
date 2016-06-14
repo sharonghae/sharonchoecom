@@ -1,13 +1,26 @@
 <h1>Messages#index</h1>
 
 <%= @messages.each do |message| %>
-  <p>
+  <% message.status == false ? weight = "font-weight:bold" : weight = "font-weight:normal" %>
+  <p style=<%= "#{weight}" %>>
     <%= message.visitor.fullname %><br>
     <%= truncate(message.content, length: 60, separator: '') %><br>
-    <%= convert_status(message.status, truthy: "Read", falsey: "Not Read") %><br>
+    <%= convert_status(message.status, truthy: "Read", falsey: "Unread") %><br>
     <%= time_ago(message.created_at) %><br>
     <%= link_to "Delete", admin_message_path(message), method: :delete, data: {confirm: "Are you sure?"} %>
   </p>
+
+  <p>
+    <%=
+      if message.status == true
+        link_to "Unread", admin_message_path(message, status: false), method: :put
+      else
+        link_to "Read", admin_message_path(message, status: true), method: :put
+      end
+    %>
+  </p>
+
+  <hr>
 <% end %>
 
 <%= paginate @messages %>
