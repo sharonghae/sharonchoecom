@@ -21,5 +21,11 @@ Rails.application.routes.draw do
 
     #route: admin/tags
     resources :tags, except: [:index]
+
+    #route: admin/visitors
+    resources :visitors, only: [:index, :destroy]
+
+    #route: admin/messages
+    resources :messages, only: [:index, :show, :update, :destroy]
   end
 end

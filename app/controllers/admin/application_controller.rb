@@ -18,6 +18,8 @@ class Admin::ApplicationController < ActionController::Base
     end
   end
 
+  #whenever the URL sends boolean parameters, it will come in as a string
+  #we need a way to convert to bool so we we can use .where() function
   def to_bool str
     ActiveRecord::Type::Boolean.new.type_cast_from_user(str)
   end

@@ -1,0 +1,13 @@
+<h1>Messages#index</h1>
+
+<%= @messages.each do |message| %>
+  <p>
+    <%= message.visitor.fullname %><br>
+    <%= truncate(message.content, length: 60, separator: '') %><br>
+    <%= convert_status(message.status, truthy: "Read", falsey: "Not Read") %><br>
+    <%= time_ago(message.created_at) %><br>
+    <%= link_to "Delete", admin_message_path(message), method: :delete, data: {confirm: "Are you sure?"} %>
+  </p>
+<% end %>
+
+<%= paginate @messages %>

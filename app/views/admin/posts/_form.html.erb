@@ -5,12 +5,12 @@
 <%= form_for [:admin, @post] do |f| %>
     <p>
       <%= f.label :title %><br>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, autocomplete: 'off' %>
     </p>
 
     <p>
       <%= f.label :content %><br>
-      <%= f.text_field :content %>
+      <%= f.text_area :content, autocomplete: 'off' %>
     </p>
 
     <p>
