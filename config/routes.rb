@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  root to: "posts#index"
+
+  #section: FRONT END ROUTES
+  resources :posts, only: [:index, :show]
+  resources :messages, only: [:new, :create]
+  resources :comments, only: [:create]
+
+  #section: ADMIN ROUTES
+
   #remap get requests to the controller
   get "/login" => "admin/sessions#new"
 
@@ -7,6 +17,9 @@ Rails.application.routes.draw do
 
   #create a route to /admin/
   namespace :admin do
+    #route: admin/dashboard
+    resources :dashboard, only: [:index]
+
     #route: /admin/sessions, create, new, destroy
     resources :sessions, only: [:new, :create, :destroy]
 
@@ -27,5 +40,15 @@ Rails.application.routes.draw do
 
     #route: admin/messages
     resources :messages, only: [:index, :show, :update, :destroy]
+
+    #route: admin/notifications
+    resources :notifications, only: [:index, :destroy]
+
+    #route: admin/settings
+    resources :settings, only: [:new, :create, :edit, :update]
   end
+
+  #if the url matches 'dismiss_all etc..', then forward it to #delete_all method
+  match "dismiss_all_notifications", to: "admin/notifications#delete_all", via: :delete
+
 end

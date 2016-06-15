@@ -1,0 +1,44 @@
+<h1>Show Post</h1>
+
+<%= link_to "All Posts", posts_path %>
+
+<p>
+  <%= @post.title %><br>
+  <%= time_ago @post.created_at %>
+</p>
+
+<p>
+  <%= @post.content %>
+</p>
+
+<h3>Comments</h3>
+
+<p>
+  <% @post.comments.each.with_index(1) do |comment, index| %>
+      <%= comment.message %> <strong><%= double_digit_number(index) %></strong><br>
+      <strong><%= comment.visitor.fullname %></strong> commented: <%= time_ago(comment.created_at) %>
+  <% end %>
+</p>
+
+<hr>
+
+<%= form_for @visitor_comment, url: comments_url do |f| %>
+  <p>
+    <%= f.label :fullname %>
+    <%= f.text_field :fullname %>
+  </p>
+
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </p>
+
+  <%= f.fields_for :comments do |c| %>
+    <p>
+      <%= c.label :message %>
+      <%= c.text_area :message %>
+    </p>
+  <% end %>
+
+  <%= f.submit "Add Comment" %>
+<% end %>

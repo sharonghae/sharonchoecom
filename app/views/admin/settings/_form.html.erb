@@ -1,0 +1,23 @@
+<%= form_for [:admin, @setting] do |f| %>
+    <p><%= f.label :site_name %><br>
+      <%= f.text_field :site_name, autocomplete: 'off' %>
+    </p>
+
+    <p><%= f.label :post_per_page %><br>
+      <%= f.number_field :post_per_page, autocomplete: 'off' %>
+    </p>
+
+    <p><%= f.label :under_maintenance %><br>
+      <%= f.check_box :under_maintenance %>
+    </p>
+
+    <p><%= f.label :prevent_commenting %><br>
+      <%= f.select :prevent_commenting, [["Disable", false],["Active", true]] %>
+    </p>
+
+    <p><%= f.label :tag_visibility %><br>
+      <%= f.select :tag_visibility, [["Active", true],["Disable", false]] %>
+    </p>
+
+    <p><%= f.submit "Save", :class => "btn btn-default" %></p>
+<% end %>

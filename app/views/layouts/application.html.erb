@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sharon Choe &mdash; developer/world traveler/lover</title>
+  <title><%= Setting.site_name ? Setting.site_name : "Sharon Choe" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,7 +20,17 @@
     </div>
 <% end %>
 
-<%= yield %>
+<p>
+  <%= link_to Setting.site_name ? Setting.site_name : "Sharon Choe", posts_path %>
+  <%= link_to "Posts", posts_path %>
+  <%= link_to "About", '#' %>
+  <%= link_to "Contact", new_message_path %>
+  <%= link_to "Login", login_path %>
+</p>
+
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>

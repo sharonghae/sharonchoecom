@@ -12,4 +12,9 @@ class Post < ActiveRecord::Base
   def self.matching_title_or_content search
     where("title LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}}%")
   end
+
+  #filter all posts by a given tag, feeds it to the view via the controller
+  def self.filter_by_tags param_tag
+    includes(:tags).where(publish: true, tags: {name: param_tag}).order(id: :desc)
+  end
 end
