@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min
+//= require angular.min
+//= require ui-bootstrap-tpls-1.3.3.min
 //= require turbolinks
 //= require_tree .

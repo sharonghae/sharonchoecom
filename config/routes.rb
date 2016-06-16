@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
 
-  root to: "posts#index"
+  #root to: "posts#index"
+  root to: "pages#home"
 
   #section: FRONT END ROUTES
   resources :posts, only: [:index, :show]
   resources :messages, only: [:new, :create]
   resources :comments, only: [:create]
+
+  #ront end static routes
+  match ":action" => "pages", via: :get
 
   #section: ADMIN ROUTES
 
