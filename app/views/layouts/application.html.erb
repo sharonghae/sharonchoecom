@@ -20,13 +20,30 @@
     </div>
 <% end %>
 
-<p>
-  <%= link_to Setting.site_name ? Setting.site_name : "Sharon Choe", posts_path %>
-  <%= link_to "Posts", posts_path %>
-  <%= link_to "About", '#' %>
-  <%= link_to "Contact", new_message_path %>
-  <%= link_to "Login", login_path %>
-</p>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<%= root_path %>">Sharon Choe</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Portfolio", '#' %></li>
+        <li><%= link_to "Resume", '#' %></li>
+        <li><%= link_to "Blog", posts_path %></li>
+        <li><%= link_to "Contact", new_message_path %></li>
+        <li><%= link_to "Login", login_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container">
   <%= yield %>
