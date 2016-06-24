@@ -26,9 +26,97 @@
 
 body {
     padding-top: 60px;
+    color: #75787b;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 979px) {
     body {
         padding-top: 0px;
     }
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #53a318;
+    border-color: #ccc;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #a9d18c;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #a9d18c;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #a9d18c;
+    background-color: #53a318;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #53a318;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #a9d18c;
+    border-bottom-color: #a9d18c;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #a9d18c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #eee;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #a9d18c;
+    }
+}
+
+.navbar-collapse.collapse {
+    display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+
+.navbar-right {
+    float: right!important;
 }
