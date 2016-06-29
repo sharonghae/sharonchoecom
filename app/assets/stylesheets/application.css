@@ -15,13 +15,61 @@
  *= require_self
  */
 
+/***************/
+/* angular animate */
+.slide-reveal.ng-enter {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+
+    opacity:0.5;
+    position:relative;
+    opacity:0;
+    top:10px;
+}
+.slide-reveal.ng-enter-active {
+    top:0;
+    opacity:1;
+}
+
+.expand.ng-enter {
+    -webkit-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    -moz-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    -o-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+}
+.expand.ng-enter-active {
+    opacity:1;
+    max-height:40px;
+}
+
+.expand.ng-leave {
+    -webkit-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    -moz-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    -o-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+    transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+
+    opacity:1;
+    max-height:40px;
+    overflow:hidden;
+}
+.expand.ng-leave-active {
+    opacity:0;
+    max-height:0;
+}
+
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url('../assets/glyphicons-halflings-regular.eot');
-    src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-    url('../assets/glyphicons-halflings-regular.woff') format('woff'),
-    url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
-    url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('./assets/glyphicons-halflings-regular.eot');
+    src: url('./assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/glyphicons-halflings-regular.woff') format('woff'),
+    url('./assets/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('./assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 body {
@@ -29,9 +77,12 @@ body {
     color: #75787b;
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 @media (max-width: 979px) {
     body {
-        padding-top: 0px;
+        padding-top: 50px;
+        color: #75787b;
+        font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 }
 
@@ -105,18 +156,186 @@ body {
     }
 }
 
-.navbar-collapse.collapse {
-    display: block!important;
+.picture {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    width: 22%;
+    min-width: 150px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 2%;
 }
 
-.navbar-nav>li, .navbar-nav {
-    float: left !important;
+#featured {
+    float: left;
+    width: 76%;
 }
 
-.navbar-nav.navbar-right:last-child {
-    margin-right: -15px !important;
+.titles {
+    color: #367806;
+    margin-top: 50px;
 }
 
-.navbar-right {
-    float: right!important;
+.blurb {
+    font-size: 1.5em;
+}
+
+.portfolio {
+    list-style: none;
+}
+
+.portfolio li {
+    width: 215px;
+    height: 290px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.portfolio-img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.portfolio-img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.portfolio-name {
+    color: #367806;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.portfolio-desc {
+    text-align: center;
+    margin: -10px 0px;
+}
+
+#portfolioDropdown {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #53a318;
+}
+
+#portfolioDropdownContainer {
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+#portfolioDropdown:hover {
+    color: #a9d18c;
+    text-decoration: none;
+}
+
+/*
+    SIMON SAYS
+*/
+.simon-wrapper {
+    width: 412px;
+    height: 412px;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    top: 10vh;
+    box-shadow: 0px 0px 12px #222;
+}
+
+.wrapper-inner {
+    position: relative;
+    top: 6px;
+}
+
+.center-pad {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: #ECE7EE;
+    border: 12px solid #333;
+    margin: -100px 0px 0px -100px;
+}
+
+.simon-brand {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: #222;
+    font-size: 3.5em;
+    margin-top: 27px;
+}
+
+.pad {
+    margin-bottom: -4px;
+}
+
+.top-left {
+    border-top-left-radius: 100%;
+}
+
+.top-right {
+    border-top-right-radius: 100%;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 100%;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 100%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.push {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border: 6px solid #333;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #00a74a;
+}
+
+.red {
+    background-color: #9f0f17;
+}
+
+.yellow {
+    background-color: #cca707;
+}
+
+.blue {
+    background-color: #094a8f;
+}
+
+.yellow.light, .yellow:active {
+     background-color: #fed93f;
+ }
+
+.blue.light, .blue:active {
+    background-color: #1c8cff;
+}
+
+.red.light, .red:active {
+    background-color: #ff4c4c;
+}
+
+.green.light, .green:active {
+    background-color: #13ff7c;
 }

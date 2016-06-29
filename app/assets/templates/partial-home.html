@@ -1,0 +1,41 @@
+<div class="container">
+  <header>
+    <div id="featured">
+      <h1>Hello!  My name is Sharon Choe.</h1>
+      <h2>I'm a <strong>web developer</strong> and <strong>pharmacist</strong> living in New York City.
+        Weird combination, I know.  But I'm trying to shake up the healthcare industry.</h2>
+      <br />
+      <br />
+      <div id="buttons">
+        <button type="button" class="btn btn-default">
+          Let's See Your Stuff
+        </button>
+        <button type="button" class="btn btn-danger">
+          I'm Looking To Hire
+        </button>
+      </div>
+    </div>
+    <div class="picture">
+      <img src="/assets/s1.png" alt="hello" width="250" height="250" />
+    </div>
+    <div class="clearfix"></div>
+  </header>
+
+  <!-- begin about me -->
+  <h2 class="titles">About Me</h2>
+  <hr />
+  <p class="blurb">I love coding and designing.  I was in the healthcare industry for three years.  Truth be told: Software in
+    healthcare <strong>suck</strong>!  I have self-taught development so I can change all that.</p>
+
+  <h2 class="titles">Portfolio</h2>
+  <hr />
+  <ul class="clearfix portfolio">
+    <li ng-repeat="item in portfolioItems">
+        <a ui-sref="{{item.name}}">
+            <img class="portfolio-img" ng-src="{{item.thumbNail}}" width="215" height="215" alt="{{item.title}}" />
+        </a>
+        <p class="portfolio-name"><a ui-sref="{{item.name}}">{{item.title}}</a></p>
+        <p class="portfolio-desc">{{item.description}}</p>
+    </li>
+  </ul>
+</div>

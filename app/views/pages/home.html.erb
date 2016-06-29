@@ -1,14 +1,5 @@
-<div class="container">
-  <header>
-    <div id="header-typography">
-      <em>Hi! My name is</em>
-      <h1>Sharon Choe</h1>
-      <h2>I'm a <strong>web developer</strong> and <strong>pharmacist</strong> living in New York City.
-      Weird combination, I know.  But I'm trying to shake up the health industry.</h2>
-    </div>
-    <div class="picture">
-
-    </div>
-    <div class="clearfix"></div>
-  </header>
+<div class="container" ng-if="$state.current.data.pageTitle">
+  <h2 style="color:#367806;">{{$state.current.data.pageTitle}}</h2>
 </div>
+
+<main ui-view class="slide-reveal"></main>
