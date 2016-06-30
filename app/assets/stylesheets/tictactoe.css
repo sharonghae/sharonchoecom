@@ -1,0 +1,22 @@
+.tic-tac-toe-board {
+    width: 300px;
+    height: 300px;
+}
+
+.tic-tac-toe-cells {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid #333;
+    float:left;
+}
+
+.xOrO {
+    text-align: center;
+    font-size: 3em;
+    font-family: Sans-Serif;
+    vertical-align: middle;
+}
+
+.xOrO p {
+    margin-top: 20px;
+}

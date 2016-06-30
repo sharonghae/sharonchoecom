@@ -1,16 +1,41 @@
+<div class="container">
+    <p>A game I built using angular.js.  Source code is here: http://github.com/</p>
+</div>
 <div class="simon-wrapper">
     <div class="wrapper-inner">
         <div class="pad">
-            <div id="pad1" class="top-left inline push green"></div>
-            <div id="pad2" class="top-right inline push red"></div>
+            <div id="pad1" class="top-left inline push green" ng-class="isSimonOn ? '' : 'not-clickable'" ng-click="registerClick(1)"></div>
+            <div id="pad2" class="top-right inline push red" ng-class="isSimonOn ? '' : 'not-clickable'" ng-click="registerClick(2)"></div>
         </div>
         <div class="pad">
-            <div id="pad3" class="bottom-left inline push yellow"></div>
-            <div id="pad4" class="bottom-right inline push blue"></div>
+            <div id="pad3" class="bottom-left inline push yellow" ng-class="isSimonOn ? '' : 'not-clickable'" ng-click="registerClick(3)"></div>
+            <div id="pad4" class="bottom-right inline push blue" ng-class="isSimonOn ? '' : 'not-clickable'" ng-click="registerClick(4)"></div>
         </div>
     </div>
     <div class="center-pad">
         <h1 class="simon-brand">simon</h1>
+        <div class="pad">
+            <div class="counter inline">
+                <h1 class="count led-off">{{ count > 0 ? count : '--' }}</h1>
+                <h3 class="label">COUNT</h3>
+            </div>
+            <div class="btn-box inline">
+                <button type="button" class="full-red btn-round" ng-click="startGame()" ng-class="isSimonOn ? '' : 'not-clickable'"></button>
+                <h3 class="label">START</h3>
+            </div>
+            <div class="btn-box inline">
+                <button type="button" class="full-yellow btn-round" ng-click="isStrict = !isStrict" ng-class="isSimonOn ? '' : 'not-clickable'"></button>
+                <h3 class="label">STRICT</h3>
+                <div id="strictIndicator" class="led" ng-class="isStrict ? 'led-on' : 'led-off'"></div>
+            </div>
+        </div>
+        <div class="pad bot">
+            <h3 class="label inline">OFF</h3>
+            <div class="on-off-slot inline" ng-click="toggleOnOff()">
+                <div class="on-off-switch" ng-class="isSimonOn ? 'on' : ''"></div>
+            </div>
+            <h3 class="label inline">ON</h3>
+        </div>
     </div>
 </div>
 

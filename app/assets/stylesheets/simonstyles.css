@@ -1,0 +1,208 @@
+/*
+    SIMON SAYS
+*/
+.simon-wrapper {
+    width: 412px;
+    height: 412px;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    top: 10vh;
+    box-shadow: 0px 0px 12px #222;
+}
+
+.wrapper-inner {
+    position: relative;
+    top: 6px;
+}
+
+.center-pad {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: #ECE7EE;
+    border: 12px solid #333;
+    margin: -110px 0px 0px -110px;
+}
+
+.simon-brand {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: #222;
+    font-size: 3.5em;
+    margin-top: 27px;
+}
+
+.pad {
+    margin-bottom: -4px;
+}
+
+.top-left {
+    border-top-left-radius: 100%;
+}
+
+.top-right {
+    border-top-right-radius: 100%;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 100%;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 100%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.push {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border: 6px solid #333;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #00a74a;
+}
+
+.red {
+    background-color: #9f0f17;
+}
+
+.yellow {
+    background-color: #cca707;
+}
+
+.blue {
+    background-color: #094a8f;
+}
+
+.yellow.light, .yellow:active {
+    background-color: #fed93f;
+}
+
+.blue.light, .blue:active {
+    background-color: #1c8cff;
+}
+
+.red.light, .red:active {
+    background-color: #ff4c4c;
+}
+
+.green.light, .green:active {
+    background-color: #13ff7c;
+}
+
+.led-on {
+    background-color: #dc0d29;
+}
+
+.led-off {
+    background-color: #32050c;
+    color: #430710;
+}
+
+.counter {
+    width: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.count {
+    font-family: monospace, Sans-Serif;
+    color: #dc0d29;
+    padding: 0px;
+    font-size: 2em;
+    width: 50px;
+    background-color: #32050c;
+    position: relative;
+    border: 4px solid #222;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.label {
+    color: #222;
+    font-family: 'oswald', arial, Sans-Serif;
+    font-size: 0.8em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.btn-box {
+    width: 50px;
+    position: relative;
+}
+
+.full-red {
+    background-color: #fc0102;
+}
+
+.full-yellow {
+    background-color: #ffff00;
+}
+
+.btn-round {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    /*background-color: #ffff00;*/
+    border-radius: 100%;
+    /*border: 4px solid #444;*/
+    box-shadow: 0px 2px 3px #222;
+    /*margin: auto;*/
+    top: -5px;
+}
+
+.led {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid #222;
+    top: -18px;
+}
+
+.pad.bot {
+    margin-top: 10px;
+}
+
+.on-off-slot {
+    height: 16px;
+    width: 40px;
+    background-color: #222;
+    position: relative;
+    top: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.on-off-switch {
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    background-color: #3193de;
+    position: relative;
+    border: 2px solid #333;
+}
+
+.on-off-switch.on {
+    left: 24px;
+}
+
+.not-clickable {
+    pointer-events: none;
+    cursor: default;
+}
