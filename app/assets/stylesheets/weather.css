@@ -1,0 +1,69 @@
+.weather-card {
+    width: 540px;
+    height: 630px;
+    color: #fff;
+    background-color: #53a318;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
+.weather-card-inner {
+    margin: auto;
+    width: 340px;
+}
+
+.weather-card-inner2 {
+    margin: auto;
+    width: 260px;
+}
+
+.weather-icon-text {
+    font-size: 2.0em;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 30px;
+}
+
+.temperature {
+    font-size: 5em;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.temperature2 {
+    font-size: 2em;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.condition {
+    height: 80px;
+    vertical-align: middle;
+    color: #a9d18c;
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.conditions {
+    width: 360px;
+    margin-top: 46px;
+}
+
+.condition-text {
+    width: 150px;
+}
+
+.city {
+    text-align: center;
+}
+
+.forecasts {
+    list-style: none;
+    margin: auto;
+}
+
+.forecasts li {
+    float: left;
+    width: 195px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #e7e7e7;
+}

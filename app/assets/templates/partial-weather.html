@@ -1,0 +1,66 @@
+<div class="container">
+
+    <div ng-if="forecast" class="weather-card">
+        <div class="weather-card-inner">
+            <div class="weather-icon inline"><img ng-src="{{'/assets/plain_weather/flat_white/png/' + forecast.item.condition.code + '.png'}}" width="128" height="128" /></div>
+            <div class="weather-icon-text inline">{{forecast.item.condition.text}}</div>
+        </div>
+        <div class="weather-card-inner2">
+            <div class="temperature inline">
+                {{forecast.item.condition.temp | number:0}}&deg;F
+            </div>
+            <div class="temperature2 inline">
+                ({{(forecast.item.condition.temp - 32) * (5/9) | number:0}}&deg;C)
+            </div>
+        </div>
+        <div class="weather-card-inner conditions">
+            <div class="condition inline">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+            </div>
+            <div class="condition-text inline">
+                <h3>WIND</h3>
+                <p>Direction: {{forecast.wind.direction}}</p>
+                <p>Speed: {{forecast.wind.speed}} mph ({{forecast.wind.speed * 0.44704 | number:0}} m/s)</p>
+            </div>
+            <div class="condition inline">
+                <i class="fa fa-tint" aria-hidden="true"></i>
+            </div>
+            <div class="condition-text inline">
+                <h3>HUMIDITY</h3>
+                <p>{{forecast.atmosphere.humidity}}%</p>
+                <p>Pressure: {{forecast.atmosphere.pressure | number:0}} in</p>
+            </div>
+        </div>
+        <div class="weather-card-inner city">
+            <h3>{{forecast.location.city}}, {{forecast.location.region}}</h3>
+            <p>sunrise {{forecast.astronomy.sunrise}} / sunset {{forecast.astronomy.sunset}}</p>
+            <h4>{{forecast.item.pubDate}}</h4>
+        </div>
+        <div class="weather-card-inner">
+            <h5>&nbsp;</h5>
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="currentCity" />
+                    <button type="button" class="btn btn-default" ng-click="getWeather(currentCity)">
+                        <i class="fa fa-sun-o" aria-hidden="true"></i> Get Weather
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <input name="inCelsius" type="checkbox" ng-model="inCelsius" />
+    <label for="inCelsius">In Celsius?</label>
+
+    <ul class="forecasts">
+        <li ng-repeat="f in forecast.item.forecast" ng-if="$index < 8">
+            <h3>{{f.date | toDateObj | date:'EEE, dd MMM'}}</h3>
+            <img ng-src="{{'/assets/plain_weather/colorful/png/' + (f.code < 10 ? '0' + f.code : f.code) + '.png'}}" width="64" height="64" />
+            <h4>{{f.text}}</h4>
+            <h5>{{inCelsius ? (f.high - 32) * (5/9) : f.high | number:0}}&deg; / {{inCelsius ? (f.low - 32) * (5/9) : f.low | number:0}}&deg;</h5>
+        </li>
+    </ul>
+
+</div>

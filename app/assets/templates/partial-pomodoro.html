@@ -1,4 +1,51 @@
 <div class="container">
     <p>A tool I made using Angular.js.  Source code is here: https://github.com/</p>
-    {{hello}}
+    <div class="pomo-body">
+        <h1>Pomodoro Clock</h1>
+        <div class="clock-display">
+            <table align="center">
+                <tr>
+                    <th class="pomo-content"> Break
+                    </th>
+                    <th class="pomo-content">Session
+                    </th>
+                </tr>
+                <tr>
+                    <td id="breakTimerDisplay" width="50%">
+                        <button class="btn btn-default pomo-btn" type="button" ng-click="minusBreak()" ng-disabled="timerStarted">-</button> <span ng-class="breakTimer < customBreakTimer? 'white' : 'pink'">{{Math.floor(breakTimer/60) | number:0}} : {{(breakTimer%60) | numberFixedLen:2}}</span>
+                        <button class="btn btn-default pomo-btn" type="button" ng-click="addBreak()" ng-disabled="timerStarted">+</button>
+                    </td>
+                    <td id="pomoTimerDisplay" width="50%">
+                        <button class="btn btn-default pomo-btn" type="button" ng-click="minusPomo()" ng-disabled="timerStarted">-</button> <span ng-class="sessionTimer < customSessionTimer? 'white' : 'pink'">{{Math.floor(sessionTimer/60) | number:0}} : {{(sessionTimer%60) | numberFixedLen:2}} </span>
+                        <button class="btn btn-default pomo-btn" type="button" ng-click="addPomo()" ng-disabled="timerStarted">+</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button class="btn btn-success pomo-btn" type="button" ng-click="breakTimer < 60? startBreak():startSession()" ng-disabled="startClicked">
+            Start
+        </button>
+        <button class="btn btn-success pomo-btn" type="button" ng-click="stop()">
+            Stop
+        </button>
+        <button type="button" class="btn btn-success pomo-btn" ng-click="reset()">
+            Reset
+        </button>
+        <div id="toDoList">
+            <div class="form-inline">
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter task to complete" ng-model="task.name">
+                <button type='submit' ng-click="submitTask(task)" class="btn btn-default">Submit</button>
+            </div>
+            </div>
+            <div class="task-list">
+                <p ng-repeat="myTask in listOfTasks track by $index">
+                    <input type="checkbox" ng-model="myTask.isComplete">
+                    <span ng-class="myTask.isComplete? 'strike':''">{{myTask.name}}</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
 </div>

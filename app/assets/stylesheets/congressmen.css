@@ -1,0 +1,20 @@
+.congress-grid {
+    width: 940px;
+    height: 500px;
+}
+
+.is-link {
+   cursor: pointer;
+}
+
+.red-marker {
+    color: #f7584c;
+}
+
+.blue-marker {
+    color: #00aced;
+}
+
+.green-marker {
+    color: #53a318;
+}

@@ -3,6 +3,7 @@
  */
 
 //= require angular.min
+//= require ui-grid.min
 //= require angular-animate.min
 //= require angular-rails-templates
 //= require_tree ../templates
@@ -12,3 +13,5 @@
 //= require simon.js
 //= require tictactoe.js
 //= require pomodoro.js
+//= require congressmen.js
+//= require weather.js

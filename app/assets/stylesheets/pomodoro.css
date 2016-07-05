@@ -1,0 +1,40 @@
+.pomo-body {
+    text-align: center;
+    background: url("/assets/photodune-680322-tomato-xs.jpg") no-repeat center center fixed;
+    padding-top: 225px;
+    padding-bottom: 125px;
+    color: #fff;
+
+}
+
+.clock-display {
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+.pomo-content {
+    text-align:center;
+}
+
+.pomo-btn {
+    margin: 2px;
+}
+
+.pink {
+    color: pink;
+}
+
+#toDoList {
+    color: black;
+    margin-top: 30px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.task-list {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}

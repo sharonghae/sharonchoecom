@@ -1,0 +1,74 @@
+{
+  "name": "angular-ui-grid",
+  "description": "A data grid for Angular",
+  "main": "ui-grid.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": ">=1.2.16 1.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-ui/ui-grid.git"
+  },
+  "homepage": "http://ui-grid.info",
+  "bugs": {
+    "url": "https://github.com/angular-ui/ui-grid/issues"
+  },
+  "keywords": [
+    "angular",
+    "ng-grid",
+    "nggrid",
+    "grid",
+    "angularjs",
+    "slickgrid",
+    "kogrid",
+    "ui-grid",
+    "ui grid",
+    "data grid"
+  ],
+  "license": "MIT",
+  "version": "3.2.4",
+  "files": [
+    "less",
+    "ui-grid.css",
+    "ui-grid.eot",
+    "ui-grid.js",
+    "ui-grid.svg",
+    "ui-grid.ttf",
+    "ui-grid.woff"
+  ],
+  "_id": "angular-ui-grid@3.2.4",
+  "scripts": {},
+  "_shasum": "cce38ea31d9bf33f59ce086e038b01c3c43d3712",
+  "_from": "angular-ui-grid@latest",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.3",
+  "_npmUser": {
+    "name": "dlgski",
+    "email": "dana.greenberg@kronos.com"
+  },
+  "dist": {
+    "shasum": "cce38ea31d9bf33f59ce086e038b01c3c43d3712",
+    "tarball": "https://registry.npmjs.org/angular-ui-grid/-/angular-ui-grid-3.2.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "c0bra",
+      "email": "emailc0bra@gmail.com"
+    },
+    {
+      "name": "jlleitschuh",
+      "email": "Jlleitschuh@wpi.edu"
+    },
+    {
+      "name": "swalters",
+      "email": "swalters@singletreetech.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/angular-ui-grid-3.2.4.tgz_1467286222148_0.053462360287085176"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-ui-grid/-/angular-ui-grid-3.2.4.tgz"
+}
