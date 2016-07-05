@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ebd864c-a2ba-4fd7-8faa-2abd5fd406b6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/angular.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/angular.html.erb" />
     </list>
     <ignored path="sharonchoecom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,8 +149,8 @@
           <file leaf-file-name="angular.html.erb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/layouts/angular.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
                   <folding />
                 </state>
               </provider>
@@ -671,12 +672,12 @@
       <workItem from="1467243834703" duration="11101000" />
       <workItem from="1467256008624" duration="25123000" />
       <workItem from="1467667660136" duration="37575000" />
-      <workItem from="1467758146086" duration="3777000" />
+      <workItem from="1467758146086" duration="4460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175650000" />
+    <option name="totallyTimeSpent" value="176333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1079,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/angular.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
           <folding />
         </state>
       </provider>

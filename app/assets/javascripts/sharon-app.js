@@ -100,6 +100,8 @@ app.filter("toDateObj", function(){
 
 app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", function($state, $scope, $location, $anchorScroll){
     //model
+    $scope.navbarCollapsed = true;
+    
     $scope.portfolioItems = [{
         id: 0,
         name: "congressmen",
