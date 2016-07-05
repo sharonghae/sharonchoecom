@@ -98,7 +98,7 @@ app.filter("toDateObj", function(){
     };
 })
 
-app.controller("MainCtrl", ["$scope", "$location", "$anchorScroll", function($scope, $location, $anchorScroll){
+app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", function($state, $scope, $location, $anchorScroll){
     //model
     $scope.portfolioItems = [{
         id: 0,
@@ -139,7 +139,19 @@ app.controller("MainCtrl", ["$scope", "$location", "$anchorScroll", function($sc
     }];
 
     $scope.scrollTo = function(id) {
-        $location.hash(id);
-        $anchorScroll();
+        //if current state === 'main', then simply scroll to
+        //else must go to 'main', then scroll
+        if($state.current.name === 'main') {
+            $location.hash(id);
+            $anchorScroll();
+        } else {
+            //state.go returns a promise, must wait for successful state change before calling scroll
+            $state.go('main').then(function(){
+                $location.hash(id);
+                $anchorScroll();
+            }).catch(function(){
+                alert('fail to change state.  sorry');
+            });
+        }
     }
 }]);

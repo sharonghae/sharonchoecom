@@ -2,7 +2,7 @@
 
     <div ng-if="forecast" class="weather-card">
         <div class="weather-card-inner">
-            <div class="weather-icon inline"><img ng-src="{{'/assets/plain_weather/flat_white/png/' + forecast.item.condition.code + '.png'}}" width="128" height="128" /></div>
+            <div class="weather-icon inline"><img ng-src="{{'/assets/plain_weather/flat_white/png/' + (forecast.item.condition.code < 10 ? '0' + forecast.item.condition.code : forecast.item.condition.code) + '.png'}}" width="128" height="128" /></div>
             <div class="weather-icon-text inline">{{forecast.item.condition.text}}</div>
         </div>
         <div class="weather-card-inner2">
