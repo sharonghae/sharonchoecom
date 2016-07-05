@@ -2,14 +2,14 @@
     <p>A game I built using angular.js.  Source code is here: https://github.com/</p>
     <div class="clearfix"></div>
 
-    <h3>Pick A Player</h3>
-    <div><button type="button" class="btn btn-default">X</button> or <button type="button" class="btn btn-default">O</button></div>
-
-    <h4>You are Player</h4>
-
     <div class="tic-tac-toe-board">
         <div class="tic-tac-toe-cells xOrO" ng-repeat="cell in [0, 1, 2, 3, 4, 5, 6, 7, 8]" ng-click="selectCell(cell)">
             <p>{{getCellValue(cell) && (getCellValue(cell) === -1 ? 'O' : 'X' ) }}</p>
         </div>
+    </div>
+
+    <div ng-if="isWinner">
+        <h3>You have {{isWinner === 'tie' ? 'a ' + isWinner + '! Cat\'s game' : isWinner}}!</h3>
+        <button type="button" class="btn btn-default" ng-click="reset()">Reset Game</button>
     </div>
 </div>

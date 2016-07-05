@@ -7,16 +7,16 @@
       <br />
       <br />
       <div id="buttons">
-        <button type="button" class="btn btn-default">
+        <button type="button" class="btn btn-default" ng-click="scrollTo('portfolio')">
           Let's See Your Stuff
         </button>
-        <button type="button" class="btn btn-danger">
-          I'm Looking To Hire
-        </button>
+        <a href="/assets/sharon_choe_resume_2016_prog2.pdf" class="btn btn-danger">
+                Hire Me
+        </a>
       </div>
     </div>
     <div class="picture">
-      <img src="/assets/s1.png" alt="hello" width="250" height="250" />
+      <img src="/assets/s0.png" alt="hello" width="250" height="250" />
     </div>
     <div class="clearfix"></div>
   </header>
@@ -25,9 +25,9 @@
   <h2 class="titles" id="aboutme">About Me</h2>
   <hr />
   <p class="blurb">I love coding and designing.  I was in the healthcare industry for four years.  Truth be told: Software in
-    healthcare <strong>suck</strong>!  I have self-taught development so I can change all that.</p>
+    healthcare should be developed by programmers like me.  I have self-taught development so I can change all that.</p>
 
-  <h2 class="titles">Portfolio</h2>
+  <h2 class="titles" id="portfolio">Portfolio</h2>
   <hr />
   <ul class="clearfix portfolio">
     <li ng-repeat="item in portfolioItems">

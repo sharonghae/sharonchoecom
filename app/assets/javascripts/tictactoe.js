@@ -3,18 +3,30 @@
  */
 
 app.controller("TicTacToeCtrl", ["$scope", function($scope){
+    //tells whether or not you won the game
+    $scope.isWinner;
+    
     var grid = 3, //number of squares per row
         size = 100, //size of each square in pixels
         intelligence = 6, //algorithm recursion fail condition (higher number = slower)
         board = [],
-        die = alert,
+        die = declareWinner,
         winningCombinations = [],
         undef;
 
     function init() {
+        $scope.isWinner = null;
         board = [];
         winningCombinations = [];
         calculateWinCombos();
+    }
+    
+    function declareWinner(result) {
+        $scope.isWinner = result;
+    }
+    
+    $scope.reset = function() {
+        init();
     }
 
     function calculateWinCombos() {

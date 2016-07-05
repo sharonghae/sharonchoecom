@@ -25,7 +25,7 @@
         <li><%= link_to "Home", root_path %></li>
         <li><a class="is-link" ng-click="scrollTo('aboutme')">About Me</a></li>
         <li class="dropdown" id="portfolioDropdownContainer">
-          <span href uib-dropdown>
+          <span href uib-dropdown id="portDropdown">
             <a href id="portfolioDropdown" uib-dropdown-toggle>
               Portfolio <span class="caret"></span>
             </a>
@@ -38,7 +38,8 @@
             </ul>
           </span>
         </li>
-        <li><%= link_to "Blog", posts_path %></li>
+        <!-- TO DO: needs some setting up in rails -->
+        <!--<li><%= link_to "Blog", posts_path %></li>-->
         <li><a class="is-link" ng-click="scrollTo('contact')">Contact</a></li>
         <li><%= link_to "Login", login_path %></li>
       </ul>
