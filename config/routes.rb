@@ -8,9 +8,6 @@ Rails.application.routes.draw do
   resources :messages, only: [:new, :create]
   resources :comments, only: [:create]
 
-  #ront end static routes
-  match ":action" => "pages", via: :get
-
   #section: ADMIN ROUTES
 
   #remap get requests to the controller
@@ -18,6 +15,9 @@ Rails.application.routes.draw do
 
   #log out of the app
   get "/logout" => "admin/sessions#destroy"
+
+  #front end static routes
+  match ":action" => "pages", via: :get
 
   #create a route to /admin/
   namespace :admin do
