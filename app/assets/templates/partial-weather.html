@@ -55,7 +55,7 @@
     <label for="inCelsius">In Celsius?</label>
 
     <ul class="forecasts">
-        <li ng-repeat="f in forecast.item.forecast" ng-if="$index < 8">
+        <li ng-repeat="f in forecast.item.forecast">
             <h3>{{f.date | toDateObj | date:'EEE, dd MMM'}}</h3>
             <img ng-src="{{'/assets/plain_weather/colorful/png/' + (f.code < 10 ? '0' + f.code : f.code) + '.png'}}" width="64" height="64" />
             <h4>{{f.text}}</h4>

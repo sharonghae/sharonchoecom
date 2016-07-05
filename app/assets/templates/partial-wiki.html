@@ -1,0 +1,28 @@
+<div class="container">
+    <form class="form-inline" id="wikiSearch" name="wikiSearch" ng-submit="getSearchResults(searchTerm)">
+        <div class="form-group">
+            <input class="form-control" required placeholder="Enter a search term" type="text" ng-model="searchTerm" />
+            <button type="button" class="btn btn-primary" ng-click="getSearchResults(searchTerm)" ng-disabled="!searchTerm">
+                Submit
+            </button>
+            <button type="button" class="btn btn-default" ng-click="searchTerm = null; searchResults = null;">
+                Reset
+            </button>
+        </div>
+    </form>
+
+    <hr />
+
+    <a ng-repeat="(key, value) in searchResults.query.pages" ng-href="https://en.wikipedia.org/?curid={{key}}" target="_blank">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    {{value.title}}
+                </h3>
+            </div>
+            <div class="panel-body">
+                {{value.extract}}
+            </div>
+        </div>
+    </a>
+</div>

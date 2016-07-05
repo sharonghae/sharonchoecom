@@ -15,3 +15,4 @@
 //= require pomodoro.js
 //= require congressmen.js
 //= require weather.js
+//= require wiki.js

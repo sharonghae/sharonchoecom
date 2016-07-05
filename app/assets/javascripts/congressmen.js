@@ -34,7 +34,7 @@ app.controller("CongressCtrl", ["$scope", "dataService",
                 displayName: 'Congress',
                 sortable: true,
                 enableFiltering: true,
-                maxWidth: 100,
+                maxWidth: 140,
                 enableColumnResizing: false,
                 enableCellEdit: false
             }, {

@@ -17,6 +17,10 @@ app.run(["$rootScope", "$state", "$stateParams", function($rootScope, $state, $s
     $rootScope.$stateParams = $stateParams;
 }]);
 
+app.run(['$anchorScroll', function($anchorScroll){
+    $anchorScroll.yOffset = 60; //scroll starts above this height
+}])
+
 app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider){
     //default route
     $urlRouterProvider.otherwise("/");
@@ -62,9 +66,14 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
         .state("weather", {
             url: "/weather_forecast",
             templateUrl: "partial-weather.html",
-            controller: "WeatherCtrl",
+            controller: "WeatherCtrl"
+        })
+        .state("wiki", {
+            url: "/wiki",
+            templateUrl: "partial-wiki.html",
+            controller: "WikiCtrl",
             data: {
-                pageTitle: ""
+                pageTitle: "Wikipedia Search Engine"
             }
         });
 }]);
@@ -73,6 +82,12 @@ app.factory("dataService",["$http",function($http){
     return {
         getData: function (url) {
             return $http.get(url);
+        },
+        jsonp: function(url) {
+            return $http({
+                method: 'JSONP',
+                url: url
+            });
         }
     };
 }]);
@@ -83,7 +98,7 @@ app.filter("toDateObj", function(){
     };
 })
 
-app.controller("MainCtrl", ["$scope", function($scope){
+app.controller("MainCtrl", ["$scope", "$location", "$anchorScroll", function($scope, $location, $anchorScroll){
     //model
     $scope.portfolioItems = [{
         id: 0,
@@ -101,7 +116,7 @@ app.controller("MainCtrl", ["$scope", function($scope){
         id: 2,
         name: "pomodoro",
         title: "Pomodoro Clock",
-        description: "Angular Productivity App",
+        description: "Angular JS Productivity App",
         thumbNail: "/assets/pomo_thumb.png"
     }, {
         id: 3,
@@ -113,7 +128,18 @@ app.controller("MainCtrl", ["$scope", function($scope){
         id: 4,
         name: "weather",
         title: "Weather Forecast",
-        description: "Angular JS Weather",
+        description: "Angular JS Weather App",
         thumbNail: "/assets/weather_thumb.png"
+    }, {
+        id: 5,
+        name: "wiki",
+        title: "Wikipedia Search Engine",
+        description: "Wikipedia API",
+        thumbNail: "/assets/wiki_thumb.png"
     }];
+
+    $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+    }
 }]);

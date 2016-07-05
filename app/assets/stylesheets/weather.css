@@ -62,8 +62,8 @@
 .forecasts li {
     float: left;
     width: 195px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
     background-color: #e7e7e7;
 }

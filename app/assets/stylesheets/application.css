@@ -236,3 +236,15 @@ body {
     color: #a9d18c;
     text-decoration: none;
 }
+
+.my-footer {
+    text-align: center;
+}
+
+.footer-icon-left {
+    margin-right: 12.5px;
+}
+
+.footer-icon-right {
+    margin-left: 12.5px;
+}
