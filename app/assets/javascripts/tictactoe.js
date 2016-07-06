@@ -110,6 +110,4 @@ app.controller("TicTacToeCtrl", ["$scope", function($scope){
     //call initialize to setup a new board
     init();
 
-    return
-
 }]);
