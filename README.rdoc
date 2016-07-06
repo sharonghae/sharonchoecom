@@ -1,28 +1,9 @@
-== README
+== SHARON CHOE DOT COM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This website is built with a Rails 4 backend (blogging, administration) using RESTful resources and an Angular.JS frontend.
 
-Things you may want to cover:
+My name is Sharon Choe.  I was in the healthcare industry for four years as a pharmacist and I felt un-fulfilled with the skillsets in that profession.  I wanted to do something more with my life.  What you see here is a fruition of about two months of work.  I started learning HTML/CSS, some JavaScript, and finally tried out Angular.  I am in love.  Angular makes everything so easy to build and deploy.  Please have a look around.
 
-* Ruby version
+Feel free to contact me if you're looking for hire.  I'm in the market for my next gig.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Live version: http://www.sharonchoe.com/#/
