@@ -249,9 +249,18 @@ body {
     margin-left: 12.5px;
 }
 
+#mobileButtons {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     #featured {
         display: none;
+    }
+
+    #mobileButtons {
+        display: block;
+        margin-top: 20px;
     }
 }
 
