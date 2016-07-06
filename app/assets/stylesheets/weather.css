@@ -1,5 +1,5 @@
 .weather-card {
-    width: 470px;
+    width: 540px;
     height: 630px;
     color: #fff;
     background-color: #53a318;
@@ -54,6 +54,10 @@
     text-align: center;
 }
 
+.city-input {
+    width: 195px;
+}
+
 .forecasts {
     list-style: none;
     margin: auto;
@@ -66,4 +70,14 @@
     margin-bottom: 10px;
     text-align: center;
     background-color: #e7e7e7;
+}
+
+@media screen and (max-width: 600px) {
+    .weather-card {
+        width: 380px;
+    }
+
+    .city-input {
+        width: 150px;
+    }
 }
