@@ -89,8 +89,8 @@
           <file leaf-file-name="sharon-app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="530">
-                  <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+                <state relative-caret-position="360">
+                  <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -672,12 +672,12 @@
       <workItem from="1467243834703" duration="11101000" />
       <workItem from="1467256008624" duration="25123000" />
       <workItem from="1467667660136" duration="37575000" />
-      <workItem from="1467758146086" duration="4600000" />
+      <workItem from="1467758146086" duration="5238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176473000" />
+    <option name="totallyTimeSpent" value="177111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1080,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        <state relative-caret-position="360">
+          <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
           <folding />
         </state>
       </provider>
