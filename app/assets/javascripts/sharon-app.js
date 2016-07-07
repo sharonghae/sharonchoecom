@@ -107,37 +107,43 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         name: "congressmen",
         title: "Search Your Congressman",
         description: "GovTrack API",
-        thumbNail: "/assets/Seal_of_the_United_States_Congress.svg"
+        thumbNail: "/assets/Seal_of_the_United_States_Congress.svg",
+        techTags: ['Angular.JS','JavaScript','GovTrack API','UI Bootstrap']
     }, {
         id: 1,
         name: "simonsays",
         title: "Simon Says",
         description: "Angular JS Game",
-        thumbNail: "/assets/simon_thumb.png"
+        thumbNail: "/assets/simon_thumb.png",
+        techTags: ['Angular.JS','JavaScript','HTML/CSS']
     }, {
         id: 2,
         name: "pomodoro",
         title: "Pomodoro Clock",
         description: "Angular JS Productivity App",
-        thumbNail: "/assets/pomo_thumb.png"
+        thumbNail: "/assets/pomo_thumb.png",
+        techTags: ['Angular.JS','JavaScript','Productivity App','HTML/CSS']
     }, {
         id: 3,
         name: "tictactoe",
         title: "Tic Tac Toe",
         description: "Angular JS Game",
-        thumbNail: "/assets/tictactoe_thumb.png"
+        thumbNail: "/assets/tictactoe_thumb.png",
+        techTags: ['Angular.JS','JavaScript','HTML/CSS']
     },{
         id: 4,
         name: "weather",
         title: "Weather Forecast",
         description: "Angular JS Weather App",
-        thumbNail: "/assets/weather_thumb.png"
+        thumbNail: "/assets/weather_thumb.png",
+        techTags: ['Angular.JS','JavaScript','Yahoo! Weather API']
     }, {
         id: 5,
         name: "wiki",
         title: "Wikipedia Search Engine",
         description: "Wikipedia API",
-        thumbNail: "/assets/wiki_thumb.png"
+        thumbNail: "/assets/wiki_thumb.png",
+        techTags: ['Angular.JS','JavaScript','Wikipedia API','Bootstrap']
     }];
 
     $scope.scrollTo = function(id) {

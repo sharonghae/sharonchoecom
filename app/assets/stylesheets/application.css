@@ -191,7 +191,7 @@ body {
     float: left;
     margin-right: 50px;
     margin-bottom: 20px;
-    cursor: pointer;
+    margin-top: 20px;
 }
 
 .portfolio-img {
@@ -214,6 +214,10 @@ body {
 .portfolio-desc {
     text-align: center;
     margin: -10px 0px;
+}
+
+.portfolio-item {
+    text-align: center;
 }
 
 #portfolioDropdown {

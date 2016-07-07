@@ -39,12 +39,13 @@
   <h2 class="titles" id="portfolio">Portfolio</h2>
   <hr />
   <ul class="clearfix portfolio">
-    <li ng-repeat="item in portfolioItems">
+    <li ng-repeat="item in portfolioItems" class="portfolio-item">
         <a ui-sref="{{item.name}}">
             <img class="portfolio-img" ng-src="{{item.thumbNail}}" width="215" height="215" alt="{{item.title}}" />
         </a>
         <p class="portfolio-name"><a ui-sref="{{item.name}}">{{item.title}}</a></p>
-        <p class="portfolio-desc">{{item.description}}</p>
+        <p class="portfolio-desc">{{item.description}}</p> <br>
+        <span ng-repeat="tag in item.techTags"><span class="label label-default" style="color:#fff;">{{tag}}</span> </span>
     </li>
   </ul>
 
