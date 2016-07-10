@@ -8,6 +8,9 @@ class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
 
+  #only show active posts
+  scope :published, -> { where(publish: true).order(id: :desc) }
+
   # class method for searching title or content of post
   def self.matching_title_or_content search
     where("title LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}}%")

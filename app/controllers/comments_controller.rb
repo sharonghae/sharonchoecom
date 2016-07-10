@@ -1,20 +1,10 @@
 class CommentsController < ApplicationController
   def create
-    visitor = Visitor.find_by(email: visitor_comments_params[:email])
-
-    if visitor
-      visitor.tap do |v|
-        v.comments << Comment.new(visitor_comments_params[:comments_attributes['0']])
-      end
-    else
-      visitor = Visitor.new(visitor_comments_params)
-    end
-
-    #save the comments
     if visitor.save
-      flash[:notice] = "Successfully created a new comment."
+      flash[:notice] = "Successfully created a new comment"
     else
-      flash[:alert] = "There was a problem creating your comment."
+      flash[:alert] = "There was a problem creating your comment"
+      set_visitor_sessions
     end
 
     redirect_to :back
@@ -25,4 +15,14 @@ class CommentsController < ApplicationController
   def visitor_comments_params
     params.require(:visitor).permit(:fullname, :email, :comments_attributes => [:message, :post_id])
   end
+
+  def visitor
+    @visitor ||= VisitorCommentService.new(visitor_comments_params).visitor
+  end
+
+  def set_visitor_sessions
+    session[:visitor_errors] = visitor.errors.full_messages
+    session[:visitor_params] = visitor_comments_params
+  end
+
 end
