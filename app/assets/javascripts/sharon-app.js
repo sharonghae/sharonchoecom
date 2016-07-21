@@ -129,7 +129,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         title: "Tic Tac Toe",
         description: "Angular JS Game",
         thumbNail: "/assets/tictactoe_thumb.png",
-        techTags: ['Angular.JS','JavaScript','HTML/CSS']
+        techTags: ['Angular.JS','Algorithms','HTML/CSS']
     },{
         id: 4,
         name: "weather",

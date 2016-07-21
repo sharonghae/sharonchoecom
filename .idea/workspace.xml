@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ebd864c-a2ba-4fd7-8faa-2abd5fd406b6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog2.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog2.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.docx" afterPath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.pdf" afterPath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/sharon-app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/sharon-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/partial-home.html" afterPath="$PROJECT_DIR$/app/assets/templates/partial-home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/simon.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/simon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" afterPath="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" />
     </list>
     <ignored path="sharonchoecom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,28 +42,38 @@
           <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+                <state relative-caret-position="578">
+                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <file leaf-file-name="simon.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/simon.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                <state relative-caret-position="102">
+                  <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="partial-weather.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="partial-weather.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-weather.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+                <state relative-caret-position="986">
+                  <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sharon-app.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1734">
+                  <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -74,20 +89,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="simon.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/simon.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="85" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="131" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="partial-simon.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-simon.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
+                <state relative-caret-position="391">
                   <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
                   <folding />
                 </state>
@@ -114,21 +119,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="partial-tictactoe.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-tictactoe.html">
+          <file leaf-file-name="partial-pomodoro.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="156" selection-start-line="2" selection-start-column="156" selection-end-line="2" selection-end-column="156" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="partial-pomodoro.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html">
+          <file leaf-file-name="pomodoro.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
                   <folding />
                 </state>
               </provider>
@@ -138,31 +143,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sharon-app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="110" column="73" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wiki.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/wiki.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="partial-home.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="174">
-                  <caret line="47" column="99" selection-start-line="47" selection-start-column="99" selection-end-line="47" selection-end-column="99" />
+                <state relative-caret-position="663">
+                  <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
                   <folding>
                     <element signature="n#style#0;n#span#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -173,8 +158,8 @@
           <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+                <state relative-caret-position="310">
+                  <caret line="219" column="23" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -195,16 +180,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1360">
                   <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application_helper.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -281,9 +256,7 @@
         <option value="$PROJECT_DIR$/app/assets/templates/templatesimon.html" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/angular-app.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/simon.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pomodoro.js" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/congressmen.css" />
@@ -297,12 +270,10 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/angular.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/tictactoe.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/tictactoe.css" />
         <option value="$PROJECT_DIR$/app/assets/templates/partial-tictactoe.html" />
-        <option value="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/simonstyles.css" />
         <option value="$PROJECT_DIR$/app/assets/templates/partial-simon.html" />
         <option value="$PROJECT_DIR$/app/assets/templates/partial-congressmen.html" />
@@ -311,6 +282,10 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/sharon-app.js" />
         <option value="$PROJECT_DIR$/app/assets/templates/partial-home.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/simon.js" />
+        <option value="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" />
       </list>
     </option>
   </component>
@@ -352,6 +327,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView">
+        <subPane />
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -368,60 +346,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharonchoecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,13 +449,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RAILS-BLOG" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -727,12 +648,15 @@
       <workItem from="1467256008624" duration="25123000" />
       <workItem from="1467667660136" duration="37575000" />
       <workItem from="1467758146086" duration="5975000" />
-      <workItem from="1467800654346" duration="15186000" />
+      <workItem from="1467800654346" duration="18744000" />
+      <workItem from="1467928751766" duration="1732000" />
+      <workItem from="1468539359988" duration="952000" />
+      <workItem from="1469058917336" duration="402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193034000" />
+    <option name="totallyTimeSpent" value="199678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,15 +669,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-512" width="1096" height="1936" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21296297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22972973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19859686" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2010929" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -907,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pomodoro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -968,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,15 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="43" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,14 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-congressmen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1075,26 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/simon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="85" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="131" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-simon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="391">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/wiki.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1115,36 +996,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/wiki.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="110" column="73" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-weather.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+        <state relative-caret-position="986">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="47" column="99" selection-start-line="47" selection-start-column="99" selection-end-line="47" selection-end-column="99" />
+        <state relative-caret-position="663">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sharon-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/simon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+        <state relative-caret-position="310">
+          <caret line="219" column="23" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
           <folding />
         </state>
       </provider>

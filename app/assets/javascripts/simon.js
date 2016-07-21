@@ -64,7 +64,7 @@ app.controller("SimonCtrl", ["$scope", "$timeout", function($scope, $timeout){
                     animateSimonSays();
                 } else {
                     counter = 0; //reset the counter
-                    simonTurn = false //simon turn over
+                    simonTurn = false; //simon turn over
                 }
             }, innerTimeoutSecs); //how long it stays lit
         }, outerTimeoutSecs); //how long until the next pad
