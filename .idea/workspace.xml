@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ebd864c-a2ba-4fd7-8faa-2abd5fd406b6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog2.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog2.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.docx" afterPath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.pdf" afterPath="$PROJECT_DIR$/app/assets/media/sharon_choe_resume_2016_prog.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/sharon-app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/sharon-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/simon.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/simon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" afterPath="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" />
     </list>
     <ignored path="sharonchoecom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,16 +102,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="weather.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/weather.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="partial-pomodoro.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -129,11 +112,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pomodoro.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="pomodoro.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="34">
                   <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -235,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/admin/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/dashboard/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/settings/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/settings/new.html.erb" />
@@ -286,6 +278,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/simon.js" />
         <option value="$PROJECT_DIR$/app/assets/templates/partial-pomodoro.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pomodoro.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -651,12 +644,12 @@
       <workItem from="1467800654346" duration="18744000" />
       <workItem from="1467928751766" duration="1732000" />
       <workItem from="1468539359988" duration="952000" />
-      <workItem from="1469058917336" duration="402000" />
+      <workItem from="1469058917336" duration="714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199678000" />
+    <option name="totallyTimeSpent" value="199990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,13 +708,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/settings/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1065,6 +1051,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
