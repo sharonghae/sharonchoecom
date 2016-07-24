@@ -1,8 +1,9 @@
+<div class="container">A game I built in Angular.JS.  Source: <a href="http://codepen.io/sharonghae/pen/wWpXJP" target="_blank">Codepen</a></div>
 <div class="tower-container">
     <div class="no-select">
-        <i class="fa fa-arrow-down modify-disk down" aria-hidden="true" ng-click="minusDisk()"></i>
+        <i class="fa fa-arrow-down fa-lg modify-disk down" aria-hidden="true" ng-click="minusDisk()"></i>
         <span>&nbsp;{{totalDisks}}&nbsp;</span>
-        <i class="fa fa-arrow-up modify-disk up" aria-hidden="true" ng-click="addDisk()"></i>
+        <i class="fa fa-arrow-up fa-lg modify-disk up" aria-hidden="true" ng-click="addDisk()"></i>
     </div>
     <br />
 
@@ -34,6 +35,7 @@
         <div class="inline stats">Moves: {{moves}}</div>
         <div class="inline">Mininum number of moves: {{minMoves}}</div>
     </div>
+    <br />
     <button ng-click="restartGame()">Restart</button>
 
     <p ng-if="isWinner">You won!</p>
