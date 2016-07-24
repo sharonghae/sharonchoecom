@@ -75,6 +75,14 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
             data: {
                 pageTitle: "Wikipedia Search Engine"
             }
+        })
+        .state("tower", {
+            url: "/tower_of_hanoi",
+            templateUrl: "partial-tower.html",
+            controller: "TowerCtrl",
+            data: {
+                pageTitle: "Tower of Hanoi"
+            }
         });
 }]);
 
@@ -144,6 +152,13 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         description: "Wikipedia API",
         thumbNail: "/assets/wiki_thumb.png",
         techTags: ['Angular.JS','JavaScript','Wikipedia API','Bootstrap']
+    }, {
+        id: 6,
+        name: "tower",
+        title: "Tower of Hanoi",
+        description: "Angular JS Puzzle",
+        thumbNail: "/assets/tower_thumb.png",
+        techTags: ['Angular.JS', 'SASS', 'Algorithms']
     }];
 
     $scope.scrollTo = function(id) {

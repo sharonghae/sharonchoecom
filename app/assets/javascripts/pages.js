@@ -16,3 +16,4 @@
 //= require congressmen.js
 //= require weather.js
 //= require wiki.js
+//= require tower.js

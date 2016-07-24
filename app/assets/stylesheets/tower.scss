@@ -1,0 +1,103 @@
+$total: 10;
+$step: 360deg/$total;
+$disk-border: 5px;
+$black: #000000;
+
+  .tower-container {
+    font-family: arial, helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .disk-list {
+    list-style-type: none;
+    padding-left: 0px;
+    position: absolute;
+    bottom: -10px;
+    width: 180px;
+  }
+
+  @mixin dimensions($width: null, $height: null) {
+    width: $width;
+    height: $height;
+  }
+
+  @for $i from 1 through $total {
+    .disk#{$i} {
+      background: adjust-hue(blue, $i * $step);
+      width: $i * 20px;
+      height: 20px;
+      margin: auto;
+      border: {
+        top-left-radius: $disk-border;
+        top-right-radius: $disk-border;
+      }
+    }
+  }
+
+  .rod {
+    @include dimensions($width: 180px, $height: 180px);
+    //vertical-align: bottom;
+    border-bottom: 5px solid #000000;
+    border-radius: 7px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    &:before {
+      @include dimensions($width: 4px, $height: 170px);
+      content: '';
+      display: block;
+      background: $black;
+      position: absolute;
+      bottom: -2px;
+      left: calc(50% - 2px);
+      z-index: -1;
+      border-radius: 30px;
+    }
+  }
+
+
+
+  .modify-disk {
+    cursor: pointer;
+    &.up {
+      color: #367806;
+    }
+    &.down {
+      color: #ff0033;
+    }
+    &:hover {
+      color: #800020;
+    }
+    &:active {
+      color: #ff0000;
+    }
+  }
+
+  @mixin no-select($none: none) {
+    -webkit-user-select: $none; /* Chrome/Safari */
+    -moz-user-select: $none; /* Firefox */
+    -ms-user-select: $none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: $none;
+    user-select: $none;
+  }
+
+  .no-select {
+    @include no-select(none);
+  }
+
+  .disk-above-rod {
+    @include dimensions($width: 180px, $height: 20px);
+    margin-left: 5px;
+  }
+
+  .stats {
+    width: 50%;
+    text-align: left;
+  }
+
+  .stats-container {
+    width: 540px;
+    margin: auto;
+  }

@@ -1,0 +1,41 @@
+<div class="tower-container">
+    <div class="no-select">
+        <i class="fa fa-arrow-down modify-disk down" aria-hidden="true" ng-click="minusDisk()"></i>
+        <span>&nbsp;{{totalDisks}}&nbsp;</span>
+        <i class="fa fa-arrow-up modify-disk up" aria-hidden="true" ng-click="addDisk()"></i>
+    </div>
+    <br />
+
+    <!-- display disk above rods ng-if="selectedRod === rod"-->
+    <div ng-repeat="rod in [1, 2, 3]" class="inline disk-above-rod">
+        <div ng-class="'disk' + selectedDisk" ng-if="selectedRod === rod"></div>
+    </div>
+    <br />
+
+    <div ng-click="pickRod(rod1, 1)" class="rod">
+        <ul class="disk-list">
+            <li ng-repeat="disk in rod1" ng-class="'disk' + disk"></li>
+        </ul>
+    </div>
+
+    <div ng-click="pickRod(rod2, 2)" class="rod">
+        <ul class="disk-list">
+            <li ng-repeat="disk in rod2" ng-class="'disk' + disk"></li>
+        </ul>
+    </div>
+
+    <div ng-click="pickRod(rod3, 3)" class="rod">
+        <ul class="disk-list">
+            <li ng-repeat="disk in rod3" ng-class="'disk' + disk"></li>
+        </ul>
+    </div>
+    <p></p>
+    <div class="stats-container">
+        <div class="inline stats">Moves: {{moves}}</div>
+        <div class="inline">Mininum number of moves: {{minMoves}}</div>
+    </div>
+    <button ng-click="restartGame()">Restart</button>
+
+    <p ng-if="isWinner">You won!</p>
+
+</div>
