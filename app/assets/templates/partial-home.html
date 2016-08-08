@@ -40,10 +40,16 @@
   <hr />
   <ul class="clearfix portfolio">
     <li ng-repeat="item in portfolioItems" class="portfolio-item">
-        <a ui-sref="{{item.name}}">
+        <a ng-if="item.name" ui-sref="{{item.name}}">
             <img class="portfolio-img" ng-src="{{item.thumbNail}}" width="215" height="215" alt="{{item.title}}" />
         </a>
-        <p class="portfolio-name"><a ui-sref="{{item.name}}">{{item.title}}</a></p>
+        <a ng-if="item.url" ng-href="{{item.url}}">
+            <img class="portfolio-img" ng-src="{{item.thumbNail}}" width="215" height="215" alt="{{item.title}}" />
+        </a>
+        <p class="portfolio-name">
+            <a ng-if="item.name" ui-sref="{{item.name}}">{{item.title}}</a>
+            <a ng-if="item.url" ng-href="{{item.url}}" target="_blank">{{item.title}}</a>
+        </p>
         <p class="portfolio-desc">{{item.description}}</p> <br>
         <span ng-repeat="tag in item.techTags"><span class="label label-default" style="color:#fff;">{{tag}}</span> </span>
     </li>

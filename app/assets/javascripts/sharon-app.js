@@ -116,49 +116,64 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         title: "Search Your Congressman",
         description: "GovTrack API",
         thumbNail: "/assets/Seal_of_the_United_States_Congress.svg",
-        techTags: ['Angular.JS','JavaScript','GovTrack API','UI Bootstrap']
+        techTags: ['Angular.JS','JavaScript','GovTrack API','UI Bootstrap'],
+        url: null
     }, {
         id: 1,
         name: "simonsays",
         title: "Simon Says",
         description: "Angular JS Game",
         thumbNail: "/assets/simon_thumb.png",
-        techTags: ['Angular.JS','JavaScript','HTML/CSS']
+        techTags: ['Angular.JS','JavaScript','HTML/CSS'],
+        url: null
     }, {
         id: 2,
         name: "pomodoro",
         title: "Pomodoro Clock",
         description: "Angular JS Productivity App",
         thumbNail: "/assets/pomo_thumb.png",
-        techTags: ['Angular.JS','JavaScript','Productivity App','HTML/CSS']
+        techTags: ['Angular.JS','JavaScript','Productivity App','HTML/CSS'],
+        url: null
     }, {
         id: 3,
         name: "tictactoe",
         title: "Tic Tac Toe",
         description: "Angular JS Game",
         thumbNail: "/assets/tictactoe_thumb.png",
-        techTags: ['Angular.JS','Algorithms','HTML/CSS']
+        techTags: ['Angular.JS','Algorithms','HTML/CSS'],
+        url: null
     },{
         id: 4,
         name: "weather",
         title: "Weather Forecast",
         description: "Angular JS Weather App",
         thumbNail: "/assets/weather_thumb.png",
-        techTags: ['Angular.JS','JavaScript','Yahoo! Weather API']
+        techTags: ['Angular.JS','JavaScript','Yahoo! Weather API'],
+        url: null
     }, {
         id: 5,
         name: "wiki",
         title: "Wikipedia Search Engine",
         description: "Wikipedia API",
         thumbNail: "/assets/wiki_thumb.png",
-        techTags: ['Angular.JS','JavaScript','Wikipedia API','Bootstrap']
+        techTags: ['Angular.JS','JavaScript','Wikipedia API','Bootstrap'],
+        url: null
     }, {
         id: 6,
         name: "tower",
         title: "Tower of Hanoi",
         description: "Angular JS Puzzle",
         thumbNail: "/assets/tower_thumb.png",
-        techTags: ['Angular.JS', 'SASS', 'Algorithms']
+        techTags: ['Angular.JS', 'SASS', 'Algorithms'],
+        url: null
+    }, {
+        id: 7, 
+        name: null,
+        title: "Elite Nails",
+        description: "Nail Salon Website",
+        thumbNail: "/assets/elitenails_thumb.png",
+        techTags: ['Node.JS', 'jQuery', 'reCAPTCHA', 'nodemailer'],
+        url: 'http://www.elitenailsaledo.com'
     }];
 
     $scope.scrollTo = function(id) {
