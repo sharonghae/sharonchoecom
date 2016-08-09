@@ -112,6 +112,14 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
     
     $scope.portfolioItems = [{
         id: 0,
+        name: null,
+        title: "Elite Nails",
+        description: "Nail Salon Website",
+        thumbNail: "/assets/elitenails_thumb.png",
+        techTags: ['Node.JS', 'jQuery', 'reCAPTCHA', 'nodemailer'],
+        url: 'http://www.elitenailsaledo.com'
+    }, {
+        id: 1,
         name: "congressmen",
         title: "Search Your Congressman",
         description: "GovTrack API",
@@ -119,7 +127,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','JavaScript','GovTrack API','UI Bootstrap'],
         url: null
     }, {
-        id: 1,
+        id: 2,
         name: "simonsays",
         title: "Simon Says",
         description: "Angular JS Game",
@@ -127,7 +135,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','JavaScript','HTML/CSS'],
         url: null
     }, {
-        id: 2,
+        id: 3,
         name: "pomodoro",
         title: "Pomodoro Clock",
         description: "Angular JS Productivity App",
@@ -135,7 +143,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','JavaScript','Productivity App','HTML/CSS'],
         url: null
     }, {
-        id: 3,
+        id: 4,
         name: "tictactoe",
         title: "Tic Tac Toe",
         description: "Angular JS Game",
@@ -143,7 +151,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','Algorithms','HTML/CSS'],
         url: null
     },{
-        id: 4,
+        id: 5,
         name: "weather",
         title: "Weather Forecast",
         description: "Angular JS Weather App",
@@ -151,7 +159,7 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','JavaScript','Yahoo! Weather API'],
         url: null
     }, {
-        id: 5,
+        id: 6,
         name: "wiki",
         title: "Wikipedia Search Engine",
         description: "Wikipedia API",
@@ -159,21 +167,13 @@ app.controller("MainCtrl", ["$state", "$scope", "$location", "$anchorScroll", fu
         techTags: ['Angular.JS','JavaScript','Wikipedia API','Bootstrap'],
         url: null
     }, {
-        id: 6,
+        id: 7,
         name: "tower",
         title: "Tower of Hanoi",
         description: "Angular JS Puzzle",
         thumbNail: "/assets/tower_thumb.png",
         techTags: ['Angular.JS', 'SASS', 'Algorithms'],
         url: null
-    }, {
-        id: 7, 
-        name: null,
-        title: "Elite Nails",
-        description: "Nail Salon Website",
-        thumbNail: "/assets/elitenails_thumb.png",
-        techTags: ['Node.JS', 'jQuery', 'reCAPTCHA', 'nodemailer'],
-        url: 'http://www.elitenailsaledo.com'
     }];
 
     $scope.scrollTo = function(id) {
