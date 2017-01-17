@@ -33,7 +33,7 @@
             </a>
             <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="portfolioDropdown">
               <li ng-repeat="item in portfolioItems">
-                <a ui-sref="{{item.name}}" uib-dropdown-toggle>
+                <a ng-href="{{item.name ? $state.href(item.name) : item.url}}" target="{{item.name ? '_top' : '_blank'}}" uib-dropdown-toggle>
                   {{item.title}}
                 </a>
               </li>
